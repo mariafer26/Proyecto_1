@@ -1,5 +1,5 @@
-import EarthBeing.LivingBeing;
-import EarthBeing.LivingBeingCreator;
+import EarthBeing.LivingBeing; //Importamos la clase LivingBeing del paquete EarthBeing
+import EarthBeing.LivingBeingCreator;   //Importamos la clase LivingBeingCreator del paquete EarthBeing
 
 public class Main {
     public static void main(String[] args) {
@@ -29,14 +29,13 @@ public class Main {
         Piolin.fly();
         Piolin.changedimension();
         System.out.println(Piolin);
-
          */
-
-        LivingBeingCreator factory = new LivingBeingCreator();
-        LivingBeing human = factory.createLivingBeings("Human", "Alice", 30, "White");
-        LivingBeing animal = factory.createLivingBeings("Animal", "Dog", 5, "Brown");
-        LivingBeing bird = factory.createLivingBeings("Bird", "Piolin", 2, "Yellow");
-
+        //Uso del Método Factory
+        LivingBeingCreator factory = new LivingBeingCreator(); //Creamos una instancia de la clase LivingBeingCreator
+        LivingBeing human = factory.createLivingBeings("Human", "Alice", 30, "White");  //Creamos una instancia de la clase Human
+        LivingBeing animal = factory.createLivingBeings("Animal", "Dog", 5, "Brown");   //Creamos una instancia de la clase Dog
+        LivingBeing bird = factory.createLivingBeings("Bird", "Piolin", 2, "Yellow");   //Creamos una instancia de la clase Bird
+        //Imprimimos los objetos creados con sus respectivos métodos
         System.out.println(human);
         human.born();
         human.breathe();
@@ -50,5 +49,4 @@ public class Main {
         bird.breathe();
         bird.die();
     }
-
 }
