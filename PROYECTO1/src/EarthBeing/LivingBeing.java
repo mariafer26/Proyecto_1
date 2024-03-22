@@ -1,7 +1,7 @@
-package EarthBeing;
+package EarthBeing; //Llamamos el paquete EarthBeing
 
-public abstract class LivingBeing {
-
+public abstract class LivingBeing { //Creamos la clase abstracta LivingBeing
+    //Creamos los metodos que seran implementados en las clases que hereden de esta clase
     public void born() {
         System.out.println("Born...");
     }
@@ -17,5 +17,4 @@ public abstract class LivingBeing {
     public void die() {
         System.out.println("Diying...");
     }
-
 }
