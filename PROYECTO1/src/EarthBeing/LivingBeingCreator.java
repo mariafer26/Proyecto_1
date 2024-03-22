@@ -22,7 +22,6 @@ public class LivingBeingCreator implements Creator {
         } else if ("Bird".equalsIgnoreCase(type)) {
             return new Bird(name, color, age);
         } else {
-            // Manejar otros tipos o lanzar una excepción si no se reconoce el tipo
             throw new IllegalArgumentException("Tipo de ser vivo no válido: " + type);
         }
     }
